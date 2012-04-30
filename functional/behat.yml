@@ -1,0 +1,10 @@
+default:
+  filters: 
+    tags: '~@manual&&~@wip'
+  context:
+    parameters:
+      javascript_session: selenium
+      base_url: http://test.videos.com/
+  paths:
+    bootstrap: '%%BEHAT_WORK_PATH%%/bootstrap'
+

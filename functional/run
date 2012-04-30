@@ -1,0 +1,26 @@
+#!/bin/bash
+
+setup=""
+behat=""
+
+for arg
+do
+    delim=""
+    case "$arg" in
+       --nocache) setup="${setup} --nocache";;
+       *) behat="${behat} ${arg}";;
+    esac
+done
+
+DIR=`dirname $0`
+echo -e "=== Setting Up Environment ===\n"
+${DIR}/setup.php ${setup} > /dev/null
+
+echo -e "=== Running Behat ===\n"
+
+if [[ $behat == *feature* ]]
+then
+    behat ${behat}
+else
+    behat ${behat} ${DIR}
+fi

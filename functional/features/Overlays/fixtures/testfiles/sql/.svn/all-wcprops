@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/videos/!svn/ver/201/trunk/tests/functional/features/Overlays/fixtures/testfiles/sql
+END
+VideoWithNoOverlaysAdded.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/videos/!svn/ver/201/trunk/tests/functional/features/Overlays/fixtures/testfiles/sql/VideoWithNoOverlaysAdded.sql
+END
+GetNewOverlayId.sql
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/videos/!svn/ver/201/trunk/tests/functional/features/Overlays/fixtures/testfiles/sql/GetNewOverlayId.sql
+END
+VideoWithOneOverlayAdded.sql
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/videos/!svn/ver/201/trunk/tests/functional/features/Overlays/fixtures/testfiles/sql/VideoWithOneOverlayAdded.sql
+END
+DeleteTemplateTitleXyz001.sql
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/videos/!svn/ver/201/trunk/tests/functional/features/Overlays/fixtures/testfiles/sql/DeleteTemplateTitleXyz001.sql
+END

@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<template xmls="http://videos.goviral.com" schemaVersion="1.0">
+	<title>Twitter Overlay</title>
+	<description><![CDATA[The template description goes here]]></description>
+	<author>Mark Ddumba</author>
+	<version>1.0</version>
+	<created>2012-03-12 16:15</created>
+	<attributes>
+		<attribute>
+			 <title>attribute 1 title</title>
+			 <name>attribute1</name>
+			 <description><![CDATA[attribute description]]></description>
+			 <required>true</required>
+			 <type>text</type>
+		</attribute>
+		<attribute>
+			 <title>attribute 2 title</title>
+			 <name>attribute2</name>
+			 <description><![CDATA[attribute description]]></description>
+			<options>
+				<option value="value 1">option 1</option>
+				<option value="value 2">option 2</option>
+			</options>
+            <type>dropdown</type>
+		</attribute>
+		<attribute>
+			 <title>attribute 3 title</title>
+			 <name>attribute3</name>
+			 <description><![CDATA[attribute description]]></description>
+			<options>
+				<option value="value 1">option 1</option>
+				<option value="value 2">option 2</option>
+			</options>
+            <required>false</required>
+			<type>checkbox</type>
+		</attribute>
+
+		<!-- array of attributes sharing a name -->
+		<attribute minOccurs="M" maxOccurs="N">
+			 <title>attribute 4 title</title>
+			 <name>attribute4</name>
+			 <description><![CDATA[attribute description]]></description>
+		</attribute>
+		
+        <attribute minOccurs="M" maxOccurs="N">
+             <title>attribute 5 title</title>
+             <name>attribute5</name>
+             <description><![CDATA[attribute description]]></description>
+            <options>
+                <option value="value 1">option 1</option>
+                <option value="value 2">option 2</option>
+            </options>
+            <type>dropdown</type>
+        </attribute>
+	</attributes>
+</template>

@@ -1,0 +1,1 @@
+SELECT overlay_id from video_overlays;

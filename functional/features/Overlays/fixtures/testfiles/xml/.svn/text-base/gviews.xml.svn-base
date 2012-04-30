@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<template xmls="http://videos.goviral.com" schemaVersion="1.0">
+	<title>G Views Overlay</title>
+	<description><![CDATA[The template description goes here!]]></description>
+	<author>John Butcher</author>
+	<version>1.0</version>
+	<!-- 
+	   placement is one of:
+	       pre => pre-play
+	       mid => mid-play
+	       post => post-play
+	-->
+    <placement>pre</placement>
+	<created>2012-02-29 16:15</created>
+	<attributes>
+		<attribute>
+			 <title>attribute 1 title</title>
+			 <name>attribute1</name>
+			 <description><![CDATA[attribute description]]></description>
+			 <required>true</required>
+			 <type>text</type>
+		</attribute>
+		<attribute>
+			 <title>attribute 2 title</title>
+			 <name>attribute2</name>
+			 <description><![CDATA[attribute description]]></description>
+			<options>
+				<option value="value 1">option 1</option>
+				<option value="value 2">option 2</option>
+			</options>
+            <type>dropdown</type>
+		</attribute>
+		<attribute>
+			 <title>attribute 3 title</title>
+			 <name>attribute3</name>
+			 <description><![CDATA[attribute 3 description]]></description>
+			<checkedValue>checked value</checkedValue>
+            <required>false</required>
+			<type>checkbox</type>
+		</attribute>
+        <attribute>
+             <title>attribute 4 title</title>
+             <name>attribute4</name>
+             <description><![CDATA[attribute 4 description]]></description>
+            <checkedValue>checked value</checkedValue>
+            <required>true</required>
+            <type>checkbox</type>
+        </attribute>
+		
+        <attribute>
+             <title>attribute 5 title</title>
+             <name>attribute5</name>
+             <description><![CDATA[attribute description]]></description>
+            <options>
+                <option value="value 1">option 1</option>
+                <option value="value 2">option 2</option>
+            </options>
+            <type>radio</type>
+        </attribute>
+        
+        <attribute>
+             <title>attribute 6 title</title>
+             <name>attribute6</name>
+             <description><![CDATA[attribute 6 description]]></description>
+            <options>
+                <option value="value 1">option 1</option>
+                <option value="value 3">option 3</option>
+            </options>
+            <type>radio</type>
+            <required>true</required>
+        </attribute>
+        
+        <!-- 
+            Example of tracker type which will list all available trackers 
+            for the campaign
+         -->
+        <attribute>
+             <title>All Trackers</title>
+             <name>tracker1</name>
+             <description><![CDATA[tracker 1 description]]></description>
+            <required>true</required>
+            <type>tracker</type>
+        </attribute>
+        
+        <!-- 
+            Example of tracker type which will only list custom trackers 
+            for the campaign
+         -->
+        <attribute>
+             <title>Custom Tracker</title>
+             <name>customtracker1</name>
+             <description><![CDATA[custom tracker 1 description]]></description>
+            <required>true</required>
+            <!-- 
+                Tracker type can be one of:
+                custom
+                all
+                
+                If omitted, this defaults to all
+             -->
+            <trackerType>custom</trackerType>
+            <type>tracker</type>
+        </attribute>
+        
+        <!-- 
+            If you want a free-form tracker, but you want it displayed in the tracking section,
+            then define it as follows. This will not show a selection of trackers
+         -->
+        <attribute>
+             <title>freeform tracker 2</title>
+             <name>tracker2</name>
+             <description><![CDATA[]]></description>
+            <required>false</required>
+            <type>text</type>
+            <displayGroup>tracking</displayGroup>
+        </attribute>
+	</attributes>
+</template>
