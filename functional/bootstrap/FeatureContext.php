@@ -87,20 +87,5 @@ class FeatureContext extends Behat\Mink\Behat\Context\MinkContext
         Zend_Registry::set('diContainer', $container);
     }
     
-    protected function initFixtures()
-    {
-        $fixtures = new Goviral_Test_Behat_Fixture_Database_Collection();
-        $fixtures->add('vms_test', new Goviral_Test_Behat_Fixture_Database(array(
-                    'dbOptions' => Zend_Registry::get('dbConfig')->vms->toArray(),
-                    'fixtureBaseDir' => __DIR__ . '/../features',
-                )));
-
-        $fixtures->add('users_test', new Goviral_Test_Behat_Fixture_Database(array(
-                    'dbOptions' => Zend_Registry::get('dbConfig')->users->toArray(),
-                    'fixtureBaseDir' => __DIR__ . '/../features',
-                )));
-
-        return $fixtures;
-    }
-    
+   
 }
