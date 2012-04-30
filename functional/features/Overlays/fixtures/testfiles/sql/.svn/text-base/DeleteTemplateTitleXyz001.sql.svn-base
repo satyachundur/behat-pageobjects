@@ -1,1 +1,0 @@
-DELETE FROM video_overlay_templates WHERE title = "Xyz001";
